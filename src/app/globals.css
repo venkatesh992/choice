@@ -11,11 +11,17 @@
   --font-sans: var(--font-geist-sans);
   --font-mono: var(--font-geist-mono);
   
-  /* Overriding default blue to global primary color #0F01F6 */
-  --color-blue-400: #291cf8;
-  --color-blue-500: #0F01F6;
-  --color-blue-600: #0F01F6;
-  --color-blue-700: #0a01a3;
+
+  /* Overriding default blue to global primary color #757C54 */
+  --color-blue-400: #929A6A;
+  --color-blue-500: #757C54;
+  --color-blue-600: #757C54;
+  --color-blue-700: #5B6141;
+
+  /* Overriding slate to secondary color #252D00 */
+  --color-slate-800: #354000;
+  --color-slate-900: #252D00;
+  --color-slate-950: #151A00;
 }
 
 body {
@@ -23,3 +29,6 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+
+

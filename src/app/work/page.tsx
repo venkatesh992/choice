@@ -1,5 +1,6 @@
 import Image from "next/image";
 import FadeIn from "@/components/FadeIn";
+import CtaBlock from "@/components/CtaBlock";
 
 export default function WorkPage() {
   const cases = [
@@ -11,7 +12,7 @@ export default function WorkPage() {
       stack: "Next.js 16 (App Router), PostgreSQL, Prisma, BullMQ, Tailwind 4",
       result: "Total operational clarity, 0% data leakage across tenants, reduced administrative fatigue.",
       bgColor: "bg-slate-900",
-      accentColor: "text-[#0F01F6]",
+      accentColor: "text-[#757C54]",
       theme: "dark",
       img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
     },
@@ -109,6 +110,8 @@ export default function WorkPage() {
           </FadeIn>
         ))}
       </div>
+      <CtaBlock />
     </div>
   );
 }
+

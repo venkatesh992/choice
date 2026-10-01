@@ -11,7 +11,7 @@ export default function Footer() {
           <div className="lg:w-5/12">
             <Link href="/" className="flex items-center mb-6">
               <Image 
-                src="/chocie%20logo%201.jpeg" 
+                src="/choice%20logo1.jpeg" 
                 alt="Choice Web Solutions Logo" 
                 width={240} 
                 height={120} 
@@ -92,3 +92,4 @@ export default function Footer() {
     </footer>
   );
 }
+

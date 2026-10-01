@@ -2,6 +2,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 import FadeIn from "@/components/FadeIn";
+import CtaBlock from "@/components/CtaBlock";
 
 export default function MarketingPage() {
   const services = [
@@ -78,7 +79,7 @@ export default function MarketingPage() {
               <span className="text-slate-900">Marketing</span>
               
               {/* Graphic Icon Block */}
-              <span className="inline-flex items-center justify-center w-12 h-12 md:w-[72px] md:h-[72px] bg-[#0F01F6] rounded-xl md:rounded-[24px] text-white shadow-lg shadow-[#0F01F6]/20 transform rotate-[-8deg] hover:rotate-0 transition-transform duration-500 cursor-pointer">
+              <span className="inline-flex items-center justify-center w-12 h-12 md:w-[72px] md:h-[72px] bg-[#757C54] rounded-xl md:rounded-[24px] text-white shadow-lg shadow-[#757C54]/20 transform rotate-[-8deg] hover:rotate-0 transition-transform duration-500 cursor-pointer">
                 <ArrowRight className="w-6 h-6 md:w-8 md:h-8 -rotate-45" />
               </span>
               
@@ -153,7 +154,7 @@ export default function MarketingPage() {
                     </p>
                     
                     {/* Action Link */}
-                    <Link href="/contact" className="inline-flex items-center gap-2 text-sm font-bold text-slate-900 border-b-2 border-slate-900 pb-1 w-max group/link hover:text-[#0F01F6] hover:border-[#0F01F6] transition-colors">
+                    <Link href="/contact" className="inline-flex items-center gap-2 text-sm font-bold text-slate-900 border-b-2 border-slate-900 pb-1 w-max group/link hover:text-[#757C54] hover:border-[#757C54] transition-colors">
                       Start campaign <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
                     </Link>
                   </div>
@@ -163,7 +164,8 @@ export default function MarketingPage() {
           ))}
         </div>
       </section>
-
+      <CtaBlock />
     </div>
   );
 }
+

@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { ArrowRight } from "lucide-react";
 import FadeIn from "@/components/FadeIn";
+import CtaBlock from "@/components/CtaBlock";
 
 export default function ServicesPage() {
   const services = [
@@ -117,7 +118,7 @@ export default function ServicesPage() {
                   </p>
                   
                   {/* Action Link */}
-                  <Link href="/contact" className="inline-flex items-center gap-2 text-sm font-bold text-slate-900 border-b-2 border-slate-900 pb-1 w-max group/link hover:text-[#0F01F6] hover:border-[#0F01F6] transition-colors">
+                  <Link href="/contact" className="inline-flex items-center gap-2 text-sm font-bold text-slate-900 border-b-2 border-slate-900 pb-1 w-max group/link hover:text-[#757C54] hover:border-[#757C54] transition-colors">
                     Start project <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
                   </Link>
                 </div>
@@ -127,6 +128,8 @@ export default function ServicesPage() {
           </FadeIn>
         ))}
       </div>
+      <CtaBlock />
     </div>
   );
 }
+

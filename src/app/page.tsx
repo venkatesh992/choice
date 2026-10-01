@@ -2,6 +2,7 @@ import { ArrowRight, ChevronRight, CheckCircle2, TrendingUp, ArrowUpRight } from
 import Image from "next/image";
 import Link from "next/link";
 import FadeIn from "@/components/FadeIn";
+import CtaBlock from "@/components/CtaBlock";
 
 export default function Home() {
   return (
@@ -26,7 +27,7 @@ export default function Home() {
                 We bridge the gap between business objectives and clean, maintainable engineering. From concept to deployment.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/contact" className="px-8 py-3.5 bg-[#0F01F6] text-white text-sm font-bold shadow-md hover:shadow-lg rounded-full hover:bg-slate-800 transition-colors flex items-center justify-center gap-2">
+                <Link href="/contact" className="px-8 py-3.5 bg-[#757C54] text-white text-sm font-bold shadow-md hover:shadow-lg rounded-full hover:bg-slate-800 transition-colors flex items-center justify-center gap-2">
                   Start your project <ArrowRight size={16} />
                 </Link>
               </div>
@@ -72,14 +73,14 @@ export default function Home() {
         <div className="grid grid-cols-1 lg:grid-cols-12 gap-6">
           {/* Dark Card */}
           <FadeIn delay={0.2} direction="up" effect="spring" className="lg:col-span-4 flex">
-            <div className="w-full bg-[#0F172A] rounded-[32px] p-10 text-white flex flex-col justify-between">
+            <div className="w-full bg-[#252D00] rounded-[32px] p-10 text-white flex flex-col justify-between">
               <div>
                 <h2 className="text-3xl font-bold mb-4 leading-tight">Scalable<br/>Architecture</h2>
                 <p className="text-slate-400 text-sm leading-relaxed mb-6">
                   Every project is built on modular codebases using TypeScript, componentized UI design systems, and resilient database schemas designed for long-term maintainability.
                 </p>
               </div>
-              <Link href="/services" className="text-sm font-medium text-blue-400 flex items-center gap-1 hover:text-blue-300">
+              <Link href="/services" className="text-sm font-bold text-white flex items-center gap-1 hover:opacity-80 transition-opacity">
                 Read more <ArrowRight size={14} />
               </Link>
             </div>
@@ -167,12 +168,12 @@ export default function Home() {
           
           {/* Row 1: Software Engineering */}
           <FadeIn delay={0.1} className="md:col-span-7 h-full">
-            <div className="bg-[#0A0A0A] border border-slate-800 rounded-[40px] p-6 md:p-10 h-full flex flex-col justify-center text-white text-left shadow-2xl relative overflow-hidden">
+            <div className="bg-[#252D00] border border-slate-800 rounded-[40px] p-6 md:p-10 h-full flex flex-col justify-center text-white text-left shadow-2xl relative overflow-hidden">
               {/* Subtle Ambient Glow */}
-              <div className="absolute top-[-10%] right-[-10%] w-64 h-64 bg-[#0F01F6]/30 rounded-full blur-[80px]"></div>
+              <div className="absolute top-[-10%] right-[-10%] w-64 h-64 bg-[#757C54]/30 rounded-full blur-[80px]"></div>
               
               <div className="relative z-10">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#0F01F6] border border-[#0F01F6] rounded-full text-[11px] font-bold uppercase tracking-widest text-white mb-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#757C54] border border-[#757C54] rounded-full text-[11px] font-bold uppercase tracking-widest text-white mb-4">
                   01 — Core Engineering
                 </div>
                 
@@ -187,7 +188,7 @@ export default function Home() {
                   We handle the complete software lifecycle—delivering clean, modular codebases with Zero Tech Lock-in.
                 </p>
                 
-                <Link href="/services" className="inline-flex items-center gap-3 px-6 py-3 bg-white/10 hover:bg-[#0F01F6] border border-white/10 hover:border-[#0F01F6] rounded-full text-sm font-bold text-white transition-all group">
+                <Link href="/services" className="inline-flex items-center gap-3 px-6 py-3 bg-white/10 hover:bg-[#757C54] border border-white/10 hover:border-[#757C54] rounded-full text-sm font-bold text-white transition-all group">
                   Explore Engineering <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -208,10 +209,10 @@ export default function Home() {
           <FadeIn delay={0.2} className="md:col-span-7 h-full order-3 md:order-4">
             <div className="bg-[#F8FAFC] border border-slate-200 rounded-[40px] p-6 md:p-10 h-full flex flex-col justify-center text-slate-900 text-left shadow-lg relative overflow-hidden">
               {/* Subtle Ambient Glow */}
-              <div className="absolute bottom-[-10%] right-[-10%] w-64 h-64 bg-[#0F01F6]/15 rounded-full blur-[80px]"></div>
+              <div className="absolute bottom-[-10%] right-[-10%] w-64 h-64 bg-[#757C54]/15 rounded-full blur-[80px]"></div>
               
               <div className="relative z-10">
-                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#0F01F6]/10 border border-[#0F01F6]/20 rounded-full text-[11px] font-bold uppercase tracking-widest text-[#0F01F6] mb-4">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#757C54]/10 border border-[#757C54]/20 rounded-full text-[11px] font-bold uppercase tracking-widest text-[#757C54] mb-4">
                   02 — Growth
                 </div>
                 
@@ -226,7 +227,7 @@ export default function Home() {
                   We combine deep technical audits with high-converting creative to ensure your engineering investment translates directly into revenue.
                 </p>
                 
-                <Link href="/marketing" className="inline-flex items-center gap-3 px-6 py-3 bg-[#0F01F6] hover:bg-[#0A00A3] border border-[#0F01F6] shadow-sm rounded-full text-sm font-bold text-white transition-all group">
+                <Link href="/marketing" className="inline-flex items-center gap-3 px-6 py-3 bg-[#757C54] hover:bg-[#5B6141] border border-[#757C54] shadow-sm rounded-full text-sm font-bold text-white transition-all group">
                   Explore Marketing <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
                 </Link>
               </div>
@@ -247,17 +248,17 @@ export default function Home() {
           </div>
         </FadeIn>
         <FadeIn delay={0.2}>
-          <div className="bg-[#0F01F6]/[0.03] border border-[#0F01F6]/10 rounded-[40px] p-10 md:p-16 flex flex-col lg:flex-row gap-12 items-center overflow-hidden relative">
+          <div className="bg-[#757C54]/[0.03] border border-[#757C54]/10 rounded-[40px] p-10 md:p-16 flex flex-col lg:flex-row gap-12 items-center overflow-hidden relative">
             
             <div className="lg:w-1/2 relative z-10">
-              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full text-[11px] font-bold uppercase tracking-widest mb-8 text-[#0F01F6] shadow-sm border border-slate-100">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full text-[11px] font-bold uppercase tracking-widest mb-8 text-[#757C54] shadow-sm border border-slate-100">
                 PROJECT CASES
               </div>
               <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-slate-900 tracking-tight">Radora ERP</h2>
               <p className="text-slate-800 text-xl md:text-[22px] mb-10 leading-relaxed max-w-xl font-medium">
                 Empowering institutions with a unified, high-performance ERP designed for total operational clarity, security, and scale. Built with Optimistic UI and multi-tenant data isolation.
               </p>
-              <Link href="/work" className="inline-flex items-center gap-2 text-sm font-bold text-slate-900 border-b-2 border-slate-900 pb-1 w-max group/link hover:text-[#0F01F6] hover:border-[#0F01F6] transition-colors">
+              <Link href="/work" className="inline-flex items-center gap-2 text-sm font-bold text-slate-900 border-b-2 border-slate-900 pb-1 w-max group/link hover:text-[#757C54] hover:border-[#757C54] transition-colors">
                 View full case study <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
               </Link>
             </div>
@@ -276,46 +277,15 @@ export default function Home() {
         </FadeIn>
       </section>
 
-      {/* Massive Final CTA Block */}
-      <section className="px-4 py-16 md:py-24 max-w-[1400px] mx-auto">
-        <FadeIn effect="blur">
-          <div className="w-full bg-[#0F01F6] rounded-[40px] p-12 md:p-24 text-center flex flex-col items-center shadow-2xl relative overflow-hidden">
-            
-            {/* Grid Overlay */}
-            <div className="absolute inset-0 opacity-[0.15] bg-[linear-gradient(to_right,#ffffff_1px,transparent_1px),linear-gradient(to_bottom,#ffffff_1px,transparent_1px)] bg-[size:48px_48px]"></div>
-            
-            {/* Soft Wavy Glows */}
-            <div className="absolute top-[-20%] left-[-10%] w-[600px] h-[600px] bg-[#3B2DFF] rounded-full blur-[120px] mix-blend-screen opacity-50"></div>
-            <div className="absolute bottom-[-20%] right-[-10%] w-[500px] h-[500px] bg-[#0A00A3] rounded-full blur-[120px] mix-blend-multiply opacity-50"></div>
-            
-            {/* Massive Background Text Watermark */}
-            <div className="absolute bottom-[-15%] left-0 w-full flex justify-center pointer-events-none select-none overflow-hidden">
-              <span className="text-[120px] md:text-[240px] font-black text-white/5 tracking-tighter leading-none whitespace-nowrap">
-                CHOICE
-              </span>
-            </div>
-            
-            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 relative z-10 leading-tight tracking-tight">
-              Ready to scale your platform? <br/> Let's talk architecture.
-            </h2>
-            <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl relative z-10 font-medium">
-              Book a free, no-obligation technical audit. We'll show you exactly where your infrastructure bottlenecks are and how to fix them.
-            </p>
-            
-            {/* Custom Pill Button matching the image */}
-            <Link href="/contact" className="relative z-10 flex items-center bg-white rounded-full p-1.5 pl-8 hover:scale-105 hover:shadow-2xl transition-all duration-300 group cursor-pointer shadow-xl">
-              <span className="text-slate-900 font-bold text-sm mr-6 tracking-wide group-hover:text-[#0F01F6] transition-colors">Book Strategy Call</span>
-              <div className="w-12 h-12 bg-[#0F01F6] rounded-full flex items-center justify-center text-white group-hover:bg-slate-900 group-hover:text-white transition-colors shadow-inner">
-                <ArrowUpRight size={20} strokeWidth={2.5} />
-              </div>
-            </Link>
-            
-          </div>
-        </FadeIn>
-      </section>
+      <CtaBlock />
 
     </>
   );
 }
+
+
+
+
+
 
 

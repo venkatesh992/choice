@@ -27,7 +27,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
             <Image 
-              src="/chocie%20logo%201.jpeg" 
+              src="/choice%20logo1.jpeg" 
               alt="Choice Web Solutions Logo" 
               width={240} 
               height={120} 
@@ -69,7 +69,7 @@ export default function Navbar() {
           
           {/* Desktop CTA & Mobile Toggle */}
           <div className="flex items-center gap-4">
-            <Link href="/contact" className="hidden md:flex px-7 py-2.5 bg-[#111111] text-white text-[13px] font-bold tracking-wide uppercase rounded-full hover:bg-slate-800 transition-all shadow-md hover:shadow-lg active:scale-95">
+            <Link href="/contact" className="hidden md:flex px-7 py-2.5 bg-[#252D00] text-white text-[13px] font-bold tracking-wide uppercase rounded-full hover:bg-slate-800 transition-all shadow-md hover:shadow-lg active:scale-95">
               Book a consultation
             </Link>
             
@@ -97,7 +97,7 @@ export default function Navbar() {
             <div className="px-4 py-4 flex items-center justify-between border-b border-slate-100 h-20">
               <Link href="/" className="flex items-center" onClick={() => setIsMobileMenuOpen(false)}>
                 <Image 
-                  src="/chocie%20logo%201.jpeg" 
+                  src="/choice%20logo1.jpeg" 
                   alt="Choice Web Solutions Logo" 
                   width={200} 
                   height={100} 
@@ -128,7 +128,7 @@ export default function Navbar() {
                 <Link 
                   href="/contact" 
                   onClick={() => setIsMobileMenuOpen(false)}
-                  className="w-full flex items-center justify-center py-4 bg-[#111111] text-white font-bold tracking-wide uppercase rounded-2xl shadow-lg"
+                  className="w-full flex items-center justify-center py-4 bg-[#252D00] text-white font-bold tracking-wide uppercase rounded-2xl shadow-lg"
                 >
                   Book a consultation
                 </Link>
@@ -140,3 +140,5 @@ export default function Navbar() {
     </>
   );
 }
+
+
