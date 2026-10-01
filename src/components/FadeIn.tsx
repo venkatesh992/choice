@@ -1,6 +1,6 @@
 "use client";
 
-import { motion, HTMLMotionProps } from "framer-motion";
+import { motion, HTMLMotionProps, Transition } from "framer-motion";
 import { ReactNode } from "react";
 
 interface FadeInProps extends HTMLMotionProps<"div"> {
@@ -47,10 +47,10 @@ export default function FadeIn({
   };
 
   // Transitions
-  const getTransition = () => {
+  const getTransition = (): Transition => {
     if (effect === "spring") {
       return {
-        type: "spring",
+        type: "spring" as const,
         damping: 20,
         stiffness: 100,
         mass: 1,
