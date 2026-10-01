@@ -26,7 +26,7 @@ export default function Home() {
                 We bridge the gap between business objectives and clean, maintainable engineering. From concept to deployment.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/contact" className="px-8 py-3.5 bg-[#0F172A] text-white text-sm font-medium rounded-full hover:bg-slate-800 transition-colors flex items-center justify-center gap-2">
+                <Link href="/contact" className="px-8 py-3.5 bg-[#0F01F6] text-white text-sm font-bold shadow-md hover:shadow-lg rounded-full hover:bg-slate-800 transition-colors flex items-center justify-center gap-2">
                   Start your project <ArrowRight size={16} />
                 </Link>
               </div>
@@ -239,96 +239,41 @@ export default function Home() {
       {/* Featured Case Study */}
       <section className="px-4 py-16 md:px-8 max-w-[1400px] mx-auto">
         <FadeIn>
-          <div className="bg-slate-900 rounded-[40px] p-10 md:p-16 text-white flex flex-col lg:flex-row gap-12 items-center overflow-hidden relative">
-            
-            {/* Background Accent */}
-            <div className="absolute top-0 right-0 w-96 h-96 bg-blue-600 rounded-full blur-[120px] opacity-20 translate-x-1/2 -translate-y-1/2"></div>
+          <div className="flex gap-2 items-center mb-6">
+             <span className="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-500">Project Cases</span>
+          </div>
+          <div className="mb-12">
+            <h2 className="text-3xl md:text-[40px] font-bold text-slate-900 tracking-tight">Our featured execution.</h2>
+          </div>
+        </FadeIn>
+        <FadeIn delay={0.2}>
+          <div className="bg-[#0F01F6]/[0.03] border border-[#0F01F6]/10 rounded-[40px] p-10 md:p-16 flex flex-col lg:flex-row gap-12 items-center overflow-hidden relative">
             
             <div className="lg:w-1/2 relative z-10">
-              <div className="inline-flex items-center gap-2 px-3 py-1 bg-white/10 rounded-full text-xs font-bold uppercase tracking-wider mb-6 text-blue-300">
-                <TrendingUp size={14} /> Featured Work
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-white rounded-full text-[11px] font-bold uppercase tracking-widest mb-8 text-[#0F01F6] shadow-sm border border-slate-100">
+                PROJECT CASES
               </div>
-              <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight">Logistics Operations Dashboard</h2>
-              <p className="text-slate-400 text-lg mb-8 leading-relaxed max-w-lg">
-                We engineered a centralized web portal with strict role-based access control, live delivery tracking, and automated PDF invoice generation, resulting in a 64% reduction in paperwork.
+              <h2 className="text-3xl md:text-5xl font-bold mb-6 leading-tight text-slate-900 tracking-tight">Radora ERP</h2>
+              <p className="text-slate-800 text-xl md:text-[22px] mb-10 leading-relaxed max-w-xl font-medium">
+                Empowering institutions with a unified, high-performance ERP designed for total operational clarity, security, and scale. Built with Optimistic UI and multi-tenant data isolation.
               </p>
-              <Link href="/work" className="inline-flex items-center gap-3 px-8 py-4 bg-white text-slate-900 font-bold rounded-full hover:bg-slate-100 transition-colors">
-                View all case studies <ArrowRight size={18} />
+              <Link href="/work" className="inline-flex items-center gap-2 text-sm font-bold text-slate-900 border-b-2 border-slate-900 pb-1 w-max group/link hover:text-[#0F01F6] hover:border-[#0F01F6] transition-colors">
+                View full case study <ArrowRight size={16} className="group-hover/link:translate-x-1 transition-transform" />
               </Link>
             </div>
             
             <div className="lg:w-1/2 relative z-10">
-              <div className="relative w-full aspect-video rounded-2xl overflow-hidden border border-slate-700 shadow-2xl rotate-2 hover:rotate-0 transition-transform duration-500">
+              <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-xl border border-white/50 bg-white">
                 <Image 
-                  src="https://images.unsplash.com/photo-1586528116311-ad8ed7c663e0?q=80&w=2070&auto=format&fit=crop"
-                  alt="Logistics Dashboard"
+                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+                  alt="Radora ERP"
                   fill
-                  className="object-cover opacity-80 hover:opacity-100 transition-opacity"
+                  className="object-cover transition-transform duration-700 hover:scale-105"
                 />
               </div>
             </div>
           </div>
         </FadeIn>
-      </section>
-
-      {/* Engagement Models */}
-      <section className="px-4 py-16 md:px-8 max-w-[1400px] mx-auto">
-        <FadeIn>
-          <div className="flex gap-2 items-center mb-6">
-             <span className="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-500">Engagement Models</span>
-          </div>
-          
-          <div className="mb-12">
-            <h2 className="text-3xl md:text-[40px] font-bold text-slate-900">Choose the right partnership.</h2>
-          </div>
-        </FadeIn>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 gap-6 max-w-4xl">
-          {/* Card 1: Fixed Scope */}
-          <FadeIn delay={0.1} effect="spring">
-            <div className="bg-white rounded-[32px] p-8 border border-slate-200 shadow-sm flex flex-col h-full">
-              <div className="w-12 h-12 bg-slate-100 rounded-xl flex items-center justify-center mb-6">
-                <CheckCircle2 className="text-slate-600" />
-              </div>
-              <h3 className="text-2xl font-bold text-slate-900 mb-2">Fixed-Scope Delivery</h3>
-              <p className="text-sm text-slate-500 mb-8">Best for projects with clearly defined requirements and strict timelines.</p>
-              
-              <ul className="space-y-3 mb-10 text-sm text-slate-600 font-medium">
-                <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-emerald-500" /> Predetermined delivery timelines</li>
-                <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-emerald-500" /> Fixed budget and sign-off criteria</li>
-                <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-emerald-500" /> Phased milestone deployments</li>
-              </ul>
-              
-              <Link href="/contact" className="mt-auto w-full py-3.5 border border-slate-200 text-slate-900 font-bold rounded-2xl hover:bg-slate-50 transition-colors flex justify-center">
-                Select Model
-              </Link>
-            </div>
-          </FadeIn>
-
-          {/* Card 2: Dedicated Retainer */}
-          <FadeIn delay={0.2} effect="spring">
-            <div className="bg-blue-600 rounded-[32px] p-8 border border-blue-500 text-white shadow-lg flex flex-col relative overflow-hidden h-full">
-              <div className="absolute top-6 right-6 px-3 py-1 bg-white/20 rounded-full text-[10px] font-bold uppercase tracking-wider">
-                Recommended
-              </div>
-              <div className="w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center mb-6 backdrop-blur-sm">
-                <CheckCircle2 className="text-white" />
-              </div>
-              <h3 className="text-2xl font-bold mb-2">Dedicated Retainer</h3>
-              <p className="text-blue-100 text-sm mb-8">Best for ongoing platform evolution and continuous product sprints.</p>
-              
-              <ul className="space-y-3 mb-10 text-sm text-blue-50 font-medium">
-                <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-white" /> Dedicated developer hours</li>
-                <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-white" /> Guaranteed response SLAs</li>
-                <li className="flex items-center gap-2"><CheckCircle2 size={16} className="text-white" /> Post-launch technical management</li>
-              </ul>
-              
-              <Link href="/contact" className="mt-auto w-full py-3.5 bg-white text-blue-600 font-bold rounded-2xl hover:bg-blue-50 transition-colors flex justify-center shadow-md">
-                Select Model
-              </Link>
-            </div>
-          </FadeIn>
-        </div>
       </section>
 
       {/* Massive Final CTA Block */}
@@ -358,9 +303,9 @@ export default function Home() {
             </p>
             
             {/* Custom Pill Button matching the image */}
-            <Link href="/contact" className="relative z-10 flex items-center bg-[#111111] rounded-full p-1.5 pl-8 hover:scale-105 hover:shadow-2xl transition-all duration-300 group cursor-pointer border border-white/10">
-              <span className="text-white font-bold text-sm mr-6 tracking-wide">Book Strategy Call</span>
-              <div className="w-12 h-12 bg-[#0F01F6] rounded-full flex items-center justify-center text-white group-hover:bg-white group-hover:text-[#0F01F6] transition-colors shadow-inner">
+            <Link href="/contact" className="relative z-10 flex items-center bg-white rounded-full p-1.5 pl-8 hover:scale-105 hover:shadow-2xl transition-all duration-300 group cursor-pointer shadow-xl">
+              <span className="text-slate-900 font-bold text-sm mr-6 tracking-wide group-hover:text-[#0F01F6] transition-colors">Book Strategy Call</span>
+              <div className="w-12 h-12 bg-[#0F01F6] rounded-full flex items-center justify-center text-white group-hover:bg-slate-900 group-hover:text-white transition-colors shadow-inner">
                 <ArrowUpRight size={20} strokeWidth={2.5} />
               </div>
             </Link>
@@ -372,3 +317,5 @@ export default function Home() {
     </>
   );
 }
+
+

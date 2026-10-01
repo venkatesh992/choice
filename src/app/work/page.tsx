@@ -4,6 +4,18 @@ import FadeIn from "@/components/FadeIn";
 export default function WorkPage() {
   const cases = [
     {
+      category: "Enterprise EdTech SaaS",
+      title: "Radora: The Next-Generation Educational Operating System",
+      challenge: "Educational institutions struggled with fragmented, disjointed software for academics, finance, and campus movement, causing massive administrative overhead and compromised data security.",
+      solution: "Engineered a highly secure, multi-tenant ERP wrapped in a premium 'Aether Design System'. Features specialized data-dense 'Mission Control Workstations', Optimistic UI for instantaneous interactions, and robust background processing.",
+      stack: "Next.js 16 (App Router), PostgreSQL, Prisma, BullMQ, Tailwind 4",
+      result: "Total operational clarity, 0% data leakage across tenants, reduced administrative fatigue.",
+      bgColor: "bg-slate-900",
+      accentColor: "text-[#0F01F6]",
+      theme: "dark",
+      img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+    },
+    {
       category: "Logistics & Supply Chain",
       title: "Multi-Tenant Enterprise Operations Dashboard",
       challenge: "Client was tracking multi-branch consignment dispatches and driver payouts across separate spreadsheets, resulting in data desynchronization and manual entry delays.",
