@@ -48,20 +48,7 @@ export default function Home() {
         </section>
       </FadeIn>
 
-      {/* Trusted By (Logo Ticker) */}
-      <section className="px-4 py-12 md:px-8 max-w-[1400px] mx-auto border-b border-slate-100">
-        <FadeIn delay={0.2}>
-          <p className="text-center text-sm font-bold tracking-widest text-slate-400 uppercase mb-8">Trusted by scaling enterprises</p>
-          <div className="flex flex-wrap justify-center md:justify-between items-center gap-8 opacity-60 grayscale">
-            {/* Placeholder typographic logos for premium feel */}
-            <h3 className="text-2xl font-black font-serif tracking-tighter">Vanguard</h3>
-            <h3 className="text-2xl font-black tracking-widest uppercase">Nexus</h3>
-            <h3 className="text-2xl font-extrabold italic tracking-tight">Aura Systems</h3>
-            <h3 className="text-2xl font-bold font-mono">Lumina</h3>
-            <h3 className="text-2xl font-bold tracking-widest">ORION</h3>
-          </div>
-        </FadeIn>
-      </section>
+
 
       {/* Bento & Stats Section */}
       <section className="px-4 py-16 md:px-8 max-w-[1400px] mx-auto">
