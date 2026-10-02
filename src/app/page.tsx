@@ -235,6 +235,40 @@ export default function Home() {
             </div>
           </FadeIn>
 
+          {/* Row 3: Turnkey Brand Launch */}
+          <FadeIn delay={0.1} className="md:col-span-7 h-full order-5">
+            <div className="bg-[#1E250A] border border-[#757C54]/30 rounded-[40px] p-6 md:p-10 h-full flex flex-col justify-center text-white text-left shadow-2xl relative overflow-hidden">
+              {/* Subtle Ambient Glow */}
+              <div className="absolute top-[-10%] right-[-10%] w-64 h-64 bg-[#757C54]/25 rounded-full blur-[80px]"></div>
+              
+              <div className="relative z-10">
+                <div className="inline-flex items-center gap-2 px-3 py-1.5 bg-[#757C54] border border-[#757C54] rounded-full text-[11px] font-bold uppercase tracking-widest text-white mb-4">
+                  03 — Turnkey Launchpad
+                </div>
+                
+                <h3 className="text-3xl md:text-[42px] font-bold mb-4 tracking-tight leading-tight">
+                  Brand Launch.
+                </h3>
+                
+                <p className="text-slate-300 text-lg leading-relaxed mb-3">
+                  From logo identity and domain configuration to custom web/mobile apps, social media channels, and payment gateways.
+                </p>
+                <p className="text-slate-300 text-lg leading-relaxed mb-6">
+                  A 100% done-for-you digital rollout delivered in 14–21 business days with full credential handover. Zero coordination headache.
+                </p>
+                
+                <Link href="/launch" className="inline-flex items-center gap-3 px-6 py-3 bg-white/10 hover:bg-[#757C54] border border-white/15 hover:border-[#757C54] rounded-full text-sm font-bold text-white transition-all group">
+                  Explore Brand Launch <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform" />
+                </Link>
+              </div>
+            </div>
+          </FadeIn>
+          <FadeIn delay={0.2} className="md:col-span-5 h-full min-h-[300px] order-6">
+            <div className="relative w-full h-full rounded-[40px] overflow-hidden border border-slate-100 shadow-sm">
+               <Image src="https://images.unsplash.com/photo-1542744094-3a31f272c490?q=80&w=2070&auto=format&fit=crop" alt="Turnkey Brand Launch" fill className="object-cover hover:scale-105 transition-transform duration-700" />
+            </div>
+          </FadeIn>
+
         </div>
       </section>
 

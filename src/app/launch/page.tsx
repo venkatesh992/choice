@@ -410,46 +410,80 @@ export default function LaunchPage() {
           </div>
         </FadeIn>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-5xl mx-auto">
-          {/* Old Way Card */}
-          <FadeIn delay={0.1}>
-            <div className="bg-slate-100/70 rounded-[28px] p-6 border border-slate-200 space-y-4">
-              <div className="flex items-center gap-2 text-rose-600 text-xs font-bold uppercase tracking-wider">
-                <XCircle size={18} /> The Fragmented Freelancer Route
-              </div>
-              <h3 className="text-xl font-bold text-slate-900">What usually happens</h3>
-
-              <div className="space-y-4 pt-2">
-                {comparisonPoints.map((item, i) => (
-                  <div key={i} className="p-4 bg-white/70 rounded-2xl border border-slate-200/50 space-y-1">
-                    <div className="text-xs font-bold text-slate-500 uppercase tracking-wider">{item.feature}</div>
-                    <p className="text-xs text-slate-600 leading-relaxed">{item.diy}</p>
-                  </div>
-                ))}
-              </div>
-            </div>
-          </FadeIn>
-
-          {/* Choice Web Solutions Way */}
-          <FadeIn delay={0.2}>
-            <div className="bg-gradient-to-br from-[#1E250A] via-[#2A3410] to-[#121703] text-white rounded-[28px] p-6 border border-[#757C54]/30 shadow-xl space-y-4 relative overflow-hidden">
-              <div className="absolute top-0 right-0 w-64 h-64 bg-[#757C54]/20 rounded-full blur-3xl pointer-events-none" />
+        {/* Redesigned 2-Column Layout: Editorial Poster in Secondary (#252D00) + Stacked Cards in Primary (#757C54) */}
+        <div className="grid grid-cols-1 lg:grid-cols-12 gap-6 lg:gap-8 items-stretch">
+          
+          {/* Left Column: Bold Editorial Poster Card in Secondary Brand Color (#252D00) */}
+          <FadeIn delay={0.1} className="lg:col-span-4 flex">
+            <div className="w-full bg-[#252D00] text-white rounded-[32px] p-8 md:p-10 flex flex-col justify-between shadow-2xl relative overflow-hidden min-h-[460px] border border-[#757C54]/30">
               
-              <div className="relative z-10 flex items-center gap-2 text-emerald-300 text-xs font-bold uppercase tracking-wider">
-                <CheckCircle2 size={18} /> The Choice Web Solutions Turnkey Route
+              {/* Subtle brand glow in primary (#757C54) */}
+              <div className="absolute top-0 right-0 w-80 h-80 bg-[#757C54]/25 rounded-full blur-3xl pointer-events-none" />
+              <div className="absolute -bottom-10 -left-10 w-64 h-64 bg-[#151A00]/80 rounded-full blur-3xl pointer-events-none" />
+              
+              {/* Top Brand Logo / Wordmark */}
+              <div className="relative z-10 flex items-center justify-between">
+                <span className="text-2xl md:text-3xl font-black tracking-tight text-white uppercase font-sans">
+                  CHOICE
+                </span>
+                <span className="text-[10px] font-mono uppercase tracking-widest text-[#E8EBDC] bg-white/10 px-2.5 py-1 rounded-full border border-white/15">
+                  Turnkey
+                </span>
               </div>
-              <h3 className="relative z-10 text-xl font-bold text-white">How we run your launch</h3>
 
-              <div className="relative z-10 space-y-4 pt-2">
-                {comparisonPoints.map((item, i) => (
-                  <div key={i} className="p-4 bg-black/30 backdrop-blur-md rounded-2xl border border-white/10 space-y-1">
-                    <div className="text-xs font-bold text-emerald-300 uppercase tracking-wider">{item.feature}</div>
-                    <p className="text-xs text-slate-200 leading-relaxed">{item.choice}</p>
-                  </div>
-                ))}
+              {/* Center Decorative Statement */}
+              <div className="relative z-10 my-auto py-10">
+                <div className="w-12 h-1 bg-[#757C54] rounded-full mb-4"></div>
+                <h3 className="text-2xl md:text-3xl font-extrabold leading-snug tracking-tight text-white">
+                  Engineered to eliminate <br />
+                  <span className="text-[#A4AC7E] font-medium">all contractor friction.</span>
+                </h3>
+                <p className="text-xs text-[#E8EBDC]/80 mt-3 leading-relaxed max-w-xs">
+                  One senior architecture team. Zero freelance handoff delays. 100% full credential handover.
+                </p>
               </div>
+
+              {/* Bottom Metadata & Proven Execution Badge */}
+              <div className="relative z-10 pt-6 border-t border-white/15">
+                <div className="text-base font-bold text-white tracking-wide">
+                  Proven Execution Model
+                </div>
+              </div>
+
             </div>
           </FadeIn>
+
+          {/* Right Column: 4 Stacked Comparison Cards with Primary (#757C54) Numbers */}
+          <div className="lg:col-span-8 flex flex-col gap-4 justify-between">
+            {comparisonPoints.map((item, idx) => {
+              const num = `0${idx + 1}`;
+              return (
+                <FadeIn key={idx} delay={0.1 + idx * 0.08} className="w-full">
+                  <div className="bg-white rounded-[24px] p-6 sm:p-7 border border-[#757C54]/20 shadow-[0_4px_20px_rgba(37,45,0,0.04)] hover:shadow-xl hover:border-[#757C54]/40 transition-all duration-300 relative overflow-hidden group flex items-center">
+                    
+                    {/* Ghost Giant Number tinted with brand primary (#757C54) */}
+                    <span className="text-5xl sm:text-6xl md:text-7xl font-black text-[#757C54]/20 group-hover:text-[#757C54]/35 transition-colors select-none tracking-tighter w-16 sm:w-24 shrink-0 font-sans leading-none pl-1">
+                      {num}
+                    </span>
+
+                    {/* Content Block */}
+                    <div className="space-y-1.5 pl-3 sm:pl-6 border-l border-slate-100 flex-1">
+                      <h4 className="text-lg sm:text-xl font-bold text-slate-900 tracking-tight">
+                        {item.feature}
+                      </h4>
+
+                      {/* The Choice Solution */}
+                      <p className="text-xs sm:text-sm font-medium text-slate-700 leading-relaxed">
+                        {item.choice}
+                      </p>
+                    </div>
+
+                  </div>
+                </FadeIn>
+              );
+            })}
+          </div>
+
         </div>
       </div>
 
