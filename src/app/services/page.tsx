@@ -81,9 +81,16 @@ export default function ServicesPage() {
   return (
     <div className="px-4 py-16 md:py-24 md:px-8 max-w-[1400px] mx-auto min-h-screen">
       <FadeIn>
-        <div className="mb-16 md:mb-24 text-center">
-          <h1 className="text-4xl md:text-7xl font-bold text-slate-900 mb-6 tracking-tight">Full-Cycle Capabilities.</h1>
-          <p className="text-xl md:text-2xl text-slate-500 max-w-3xl mx-auto">
+        <div className="mb-12 md:mb-16">
+          <div className="flex gap-2 items-center mb-6">
+            <span className="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-500 shadow-sm">
+              Capabilities
+            </span>
+          </div>
+          <h1 className="text-3xl md:text-[40px] font-bold text-slate-900 leading-tight max-w-2xl mb-4">
+            Full-Cycle Capabilities.
+          </h1>
+          <p className="text-slate-600 text-base md:text-lg leading-relaxed max-w-2xl">
             Comprehensive engineering services tailored to product development, platform modernization, and digital expansion.
           </p>
         </div>
@@ -92,28 +99,28 @@ export default function ServicesPage() {
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
         {services.map((service, idx) => (
           <FadeIn key={idx} delay={idx * 0.1} className={idx === 4 ? "lg:col-span-2" : ""}>
-            <div className={`${service.bgColor} rounded-[40px] p-8 md:p-12 relative overflow-hidden h-[450px] md:h-[500px] flex flex-col group`}>
+            <div className={`${service.bgColor} rounded-[32px] sm:rounded-[40px] p-6 sm:p-8 md:p-12 relative overflow-hidden min-h-[420px] md:h-[500px] flex flex-col justify-between group`}>
               
-              {/* Graphic Layer (z-0) */}
-              <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none transition-transform duration-700 group-hover:scale-105">
+              {/* Graphic Layer (z-0) with mobile opacity control */}
+              <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none transition-transform duration-700 group-hover:scale-105 opacity-60 sm:opacity-90">
                 {service.graphic}
               </div>
               
               {/* Content Layer (z-10) */}
-              <div className="relative z-10 flex flex-col h-full w-full md:max-w-[60%]">
+              <div className="relative z-10 flex flex-col h-full w-full lg:max-w-[65%]">
                 
                 {/* Top Pill */}
-                <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/70 backdrop-blur-md rounded-full text-xs font-bold text-slate-900 mb-auto w-max shadow-sm">
+                <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/80 backdrop-blur-md rounded-full text-xs font-bold text-slate-900 mb-6 w-max shadow-sm border border-white/60">
                   <div className={`w-2.5 h-2.5 rounded-full ${service.tagDot}`}></div>
                   {service.tag}
                 </div>
                 
                 {/* Text Content */}
-                <div className="mt-auto">
-                  <h2 className="text-3xl md:text-[42px] font-bold text-slate-900 mb-4 tracking-tight leading-tight">
+                <div className="mt-auto pt-6">
+                  <h2 className="text-2xl sm:text-3xl md:text-[38px] font-bold text-slate-900 mb-3 tracking-tight leading-tight">
                     {service.title}
                   </h2>
-                  <p className="text-slate-700 text-lg leading-relaxed mb-10 md:pr-8">
+                  <p className="text-slate-700 text-sm sm:text-base md:text-lg leading-relaxed mb-6 md:mb-8 pr-2">
                     {service.desc}
                   </p>
                   

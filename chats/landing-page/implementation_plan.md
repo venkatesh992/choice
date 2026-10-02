@@ -13,7 +13,7 @@ Develop a premium, high-converting portfolio landing page for "Choice Web Soluti
 
 ## Site Structure (Single Page flow)
 1. **Hero Section:** Large headline, clean typography, engaging background or gradient, primary CTA.
-2. **Metrics / "Bento Box" Highlights:** Key numbers (5+ Years, 85+ Builds, 99.4% Uptime, 100% Code Ownership) in rounded cards.
+2. **Metrics / "Bento Box" Highlights:** Key numbers (5+ Years, 85+ Builds, 99.4% Uptime, Self-Hostable Architecture) in rounded cards.
 3. **Core Engineering Pillars & Services:** Grid layout showcasing the 3 pillars and full-cycle capabilities.
 4. **Featured Case Studies:** 3 key projects with metrics.
 5. **Agile Delivery Framework:** 5-step process timeline.

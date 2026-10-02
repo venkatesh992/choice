@@ -16,6 +16,7 @@ export default function Navbar() {
     { name: "About Us", href: "/about" },
     { name: "Services", href: "/services" },
     { name: "Digital Marketing", href: "/marketing" },
+    { name: "Brand Launch", href: "/launch" },
     { name: "Projects", href: "/work" },
   ];
 
@@ -70,7 +71,7 @@ export default function Navbar() {
           {/* Desktop CTA & Mobile Toggle */}
           <div className="flex items-center gap-4">
             <Link href="/contact" className="hidden md:flex px-7 py-2.5 bg-[#252D00] text-white text-[13px] font-bold tracking-wide uppercase rounded-full hover:bg-slate-800 transition-all shadow-md hover:shadow-lg active:scale-95">
-              Book a consultation
+              Discuss Your Build
             </Link>
             
             <button 
@@ -130,7 +131,7 @@ export default function Navbar() {
                   onClick={() => setIsMobileMenuOpen(false)}
                   className="w-full flex items-center justify-center py-4 bg-[#252D00] text-white font-bold tracking-wide uppercase rounded-2xl shadow-lg"
                 >
-                  Book a consultation
+                  Discuss Your Build
                 </Link>
               </div>
             </div>

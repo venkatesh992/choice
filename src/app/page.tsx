@@ -9,37 +9,38 @@ export default function Home() {
     <>
       {/* Hero Section */}
       <FadeIn direction="up" effect="blur">
-        <section className="px-4 py-6 md:px-8 max-w-[1400px] mx-auto">
-          <div className="relative w-full h-[600px] rounded-[32px] overflow-hidden bg-slate-200">
+        <section className="px-4 py-4 md:py-6 md:px-8 max-w-[1400px] mx-auto">
+          <div className="relative w-full min-h-[520px] md:h-[600px] rounded-[32px] overflow-hidden bg-slate-200 flex items-center p-4 sm:p-6 md:p-12">
             <Image 
               src="https://images.unsplash.com/photo-1497366216548-37526070297c?q=80&w=2069&auto=format&fit=crop" 
               alt="Office workspace"
               fill
               className="object-cover"
+              priority
             />
             
-            {/* Overlaid Card */}
-            <div className="absolute top-12 left-12 max-w-lg bg-[#F8FAFC]/95 backdrop-blur-md p-10 rounded-[28px] shadow-sm">
-              <h1 className="text-4xl md:text-[44px] leading-[1.1] font-bold text-slate-900 mb-6 tracking-tight">
-                Enterprise Web & Mobile Engineering. <br/> All in one place.
+            {/* Overlaid Card - Fluid on mobile, fixed max-w on desktop */}
+            <div className="relative z-10 w-full max-w-lg bg-[#F8FAFC]/95 backdrop-blur-md p-6 sm:p-8 md:p-10 rounded-[28px] shadow-sm border border-white/60">
+              <h1 className="text-3xl sm:text-4xl md:text-[44px] leading-[1.15] font-bold text-slate-900 mb-4 md:mb-6 tracking-tight">
+                Enterprise Web & Mobile Engineering. <br className="hidden sm:inline" /> All in one place.
               </h1>
-              <p className="text-slate-600 mb-8 text-lg">
+              <p className="text-slate-600 mb-6 md:mb-8 text-base md:text-lg leading-relaxed">
                 We bridge the gap between business objectives and clean, maintainable engineering. From concept to deployment.
               </p>
               <div className="flex flex-col sm:flex-row gap-3">
-                <Link href="/contact" className="px-8 py-3.5 bg-[#757C54] text-white text-sm font-bold shadow-md hover:shadow-lg rounded-full hover:bg-slate-800 transition-colors flex items-center justify-center gap-2">
+                <Link href="/contact" className="px-7 py-3.5 bg-[#757C54] text-white text-sm font-bold shadow-md hover:shadow-lg rounded-full hover:bg-slate-800 transition-colors flex items-center justify-center gap-2">
                   Start your project <ArrowRight size={16} />
                 </Link>
               </div>
               
-              <div className="mt-8 flex gap-4 bg-white p-3 rounded-2xl shadow-sm inline-flex border border-slate-100">
-                 <div className="flex items-center gap-2 text-xs font-semibold px-2">
-                   <div className="w-6 h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600"><CheckCircle2 size={12}/></div>
-                   Zero Tech Lock-in
+              <div className="mt-6 md:mt-8 flex flex-wrap gap-2 sm:gap-4 bg-white p-2.5 sm:p-3 rounded-2xl shadow-sm border border-slate-100">
+                 <div className="flex items-center gap-2 text-xs font-semibold px-1 sm:px-2">
+                   <div className="w-5 h-5 sm:w-6 sm:h-6 bg-blue-100 rounded-full flex items-center justify-center text-blue-600 shrink-0"><CheckCircle2 size={12}/></div>
+                   <span>Zero Tech Lock-in</span>
                  </div>
-                 <div className="flex items-center gap-2 text-xs font-semibold px-2 border-l border-slate-100">
-                   <div className="w-6 h-6 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600"><CheckCircle2 size={12}/></div>
-                   100% Code Ownership
+                 <div className="flex items-center gap-2 text-xs font-semibold px-1 sm:px-2 border-t sm:border-t-0 sm:border-l border-slate-100 w-full sm:w-auto pt-1 sm:pt-0">
+                   <div className="w-5 h-5 sm:w-6 sm:h-6 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 shrink-0"><CheckCircle2 size={12}/></div>
+                   <span>Self-Hostable Architecture</span>
                  </div>
               </div>
             </div>
@@ -139,7 +140,7 @@ export default function Home() {
              </div>
              <div>
                <div className="text-3xl md:text-[40px] font-bold text-slate-900 mb-2">100%</div>
-               <div className="text-sm text-slate-500 font-bold uppercase tracking-wider">Code Ownership</div>
+               <div className="text-sm text-slate-500 font-bold uppercase tracking-wider">Self-Hostable Architecture</div>
              </div>
              <div>
                <div className="text-3xl md:text-[40px] font-bold text-slate-900 mb-2">5+</div>
@@ -266,7 +267,7 @@ export default function Home() {
             <div className="lg:w-1/2 relative z-10">
               <div className="relative w-full aspect-video rounded-3xl overflow-hidden shadow-xl border border-white/50 bg-white">
                 <Image 
-                  src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=2070&auto=format&fit=crop"
+                  src="/radoraimage.png"
                   alt="Radora ERP"
                   fill
                   className="object-cover transition-transform duration-700 hover:scale-105"

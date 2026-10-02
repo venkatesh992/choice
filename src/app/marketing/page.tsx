@@ -97,19 +97,19 @@ export default function MarketingPage() {
       </section>
 
       {/* Banner Section */}
-      <section className="px-6 py-12 max-w-[1200px] mx-auto">
+      <section className="px-4 sm:px-6 py-8 md:py-12 max-w-[1200px] mx-auto">
         <FadeIn>
-          <div className="relative w-full h-[400px] rounded-[40px] overflow-hidden bg-slate-200 group">
+          <div className="relative w-full min-h-[280px] sm:h-[350px] md:h-[400px] rounded-[32px] sm:rounded-[40px] overflow-hidden bg-slate-200 group flex items-center p-6 sm:p-12">
             <Image 
               src="https://images.unsplash.com/photo-1600880292203-757bb62b4baf?q=80&w=2070&auto=format&fit=crop" 
               alt="Team collaboration"
               fill
               className="object-cover group-hover:scale-105 transition-transform duration-700"
             />
-            <div className="absolute inset-0 bg-black/20"></div>
-            <div className="absolute top-1/2 left-12 -translate-y-1/2">
-              <h2 className="text-4xl md:text-6xl font-bold text-white max-w-lg leading-tight">
-                Let's grow your brand together!
+            <div className="absolute inset-0 bg-black/40 md:bg-black/25"></div>
+            <div className="relative z-10">
+              <h2 className="text-3xl sm:text-4xl md:text-6xl font-bold text-white max-w-lg leading-tight">
+                Let&apos;s grow your brand together!
               </h2>
             </div>
           </div>
@@ -117,39 +117,48 @@ export default function MarketingPage() {
       </section>
 
       {/* Services Grid (New Design) */}
-      <section className="px-6 py-16 max-w-[1400px] mx-auto mt-8">
+      <section className="px-4 sm:px-6 py-12 md:py-16 max-w-[1400px] mx-auto">
         <FadeIn>
-          <div className="mb-12">
-            <h2 className="text-3xl md:text-5xl font-bold tracking-tight mb-4">Capabilities</h2>
-            <p className="text-slate-500 text-lg">Full-funnel digital growth tailored to your brand.</p>
+          <div className="mb-10 md:mb-12">
+            <div className="flex gap-2 items-center mb-6">
+              <span className="px-3 py-1 bg-white border border-slate-200 rounded-full text-xs font-medium text-slate-500 shadow-sm">
+                Marketing Channels
+              </span>
+            </div>
+            <h2 className="text-3xl md:text-[40px] font-bold text-slate-900 leading-tight max-w-2xl mb-4">
+              Full-funnel digital growth tailored to your brand.
+            </h2>
+            <p className="text-slate-600 text-base md:text-lg leading-relaxed max-w-2xl">
+              Data-driven acquisition, search engine visibility, and social media campaigns engineered for direct ROI.
+            </p>
           </div>
         </FadeIn>
 
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 md:gap-8">
           {services.map((service, idx) => (
             <FadeIn key={idx} delay={idx * 0.1}>
-              <div className={`${service.bgColor} rounded-[40px] p-8 md:p-12 relative overflow-hidden h-[450px] md:h-[500px] flex flex-col group`}>
+              <div className={`${service.bgColor} rounded-[32px] sm:rounded-[40px] p-6 sm:p-8 md:p-12 relative overflow-hidden min-h-[420px] md:h-[500px] flex flex-col justify-between group`}>
                 
                 {/* Graphic Layer (z-0) */}
-                <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none transition-transform duration-700 group-hover:scale-105">
+                <div className="absolute inset-0 z-0 overflow-hidden pointer-events-none transition-transform duration-700 group-hover:scale-105 opacity-60 sm:opacity-90">
                   {service.graphic}
                 </div>
                 
                 {/* Content Layer (z-10) */}
-                <div className="relative z-10 flex flex-col h-full w-full md:max-w-[65%]">
+                <div className="relative z-10 flex flex-col h-full w-full lg:max-w-[65%]">
                   
                   {/* Top Pill */}
-                  <div className="inline-flex items-center gap-2 px-4 py-2 bg-white/70 backdrop-blur-md rounded-full text-xs font-bold text-slate-900 mb-auto w-max shadow-sm">
+                  <div className="inline-flex items-center gap-2 px-3.5 py-1.5 bg-white/80 backdrop-blur-md rounded-full text-xs font-bold text-slate-900 mb-6 w-max shadow-sm border border-white/60">
                     <div className={`w-2.5 h-2.5 rounded-full ${service.tagDot}`}></div>
                     {service.tag}
                   </div>
                   
                   {/* Text Content */}
-                  <div className="mt-auto">
-                    <h2 className="text-3xl md:text-[42px] font-bold text-slate-900 mb-4 tracking-tight leading-tight pr-4">
+                  <div className="mt-auto pt-6">
+                    <h2 className="text-2xl sm:text-3xl md:text-[38px] font-bold text-slate-900 mb-3 tracking-tight leading-tight pr-2">
                       {service.title}
                     </h2>
-                    <p className="text-slate-700 text-lg leading-relaxed mb-10 pr-4">
+                    <p className="text-slate-700 text-sm sm:text-base md:text-lg leading-relaxed mb-6 md:mb-8 pr-2">
                       {service.desc}
                     </p>
                     

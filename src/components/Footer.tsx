@@ -52,6 +52,7 @@ export default function Footer() {
                 <li><Link href="/about" className="hover:text-black transition-colors">About Us</Link></li>
                 <li><Link href="/services" className="hover:text-black transition-colors">Services</Link></li>
                 <li><Link href="/marketing" className="hover:text-black transition-colors">Digital Marketing</Link></li>
+                <li><Link href="/launch" className="hover:text-black transition-colors">Brand Launch (Turnkey)</Link></li>
                 <li><Link href="/work" className="hover:text-black transition-colors">Projects</Link></li>
               </ul>
             </div>
@@ -60,7 +61,7 @@ export default function Footer() {
             <div className="w-1/2 sm:w-auto">
               <h3 className="font-black text-black mb-6 uppercase tracking-widest text-sm">Connect</h3>
               <ul className="space-y-4 text-[14px] text-slate-500 font-bold tracking-wide">
-                <li><Link href="/contact" className="hover:text-black transition-colors">Book a call</Link></li>
+                <li><Link href="/contact" className="hover:text-black transition-colors">Discuss Your Build</Link></li>
                 <li><a href="#" className="hover:text-black transition-colors">Instagram</a></li>
                 <li><a href="#" className="hover:text-black transition-colors">LinkedIn</a></li>
                 <li><a href="#" className="hover:text-black transition-colors">Twitter</a></li>
@@ -71,8 +72,8 @@ export default function Footer() {
             <div className="w-1/2 sm:w-auto">
               <h3 className="font-black text-black mb-6 uppercase tracking-widest text-sm">Legal</h3>
               <ul className="space-y-4 text-[14px] text-slate-500 font-bold tracking-wide">
-                <li><Link href="#" className="hover:text-black transition-colors">Privacy Policy</Link></li>
-                <li><Link href="#" className="hover:text-black transition-colors">Terms of Service</Link></li>
+                <li><Link href="/privacy" className="hover:text-black transition-colors">Privacy Policy</Link></li>
+                <li><Link href="/terms" className="hover:text-black transition-colors">Terms of Service</Link></li>
                 <li><Link href="/contact" className="hover:text-black transition-colors">Contact</Link></li>
               </ul>
             </div>

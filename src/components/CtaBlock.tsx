@@ -22,16 +22,18 @@ export default function CtaBlock() {
             </span>
           </div>
           
-          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 relative z-10 leading-tight tracking-tight">
-            Ready to scale your platform? <br/> Let's talk architecture.
+          <h2 className="text-4xl md:text-6xl font-bold text-white mb-6 relative z-10 leading-tight tracking-tight max-w-4xl">
+            Have a product in mind? <br className="hidden sm:inline" /> Let&apos;s engineer it right.
           </h2>
-          <p className="text-lg md:text-xl text-white/90 mb-10 max-w-2xl relative z-10 font-medium">
-            Book a free, no-obligation technical audit. We'll show you exactly where your infrastructure bottlenecks are and how to fix them.
+          <p className="text-base md:text-xl text-white/90 mb-10 max-w-2xl relative z-10 font-medium leading-relaxed">
+            Whether you are launching an enterprise SaaS, building a companion mobile app, or scaling a high-traffic WooCommerce store—we turn complex requirements into production software.
           </p>
           
           {/* Custom Pill Button */}
           <Link href="/contact" className="relative z-10 flex items-center bg-white rounded-full p-1.5 pl-8 hover:scale-105 hover:shadow-2xl transition-all duration-300 group cursor-pointer shadow-xl">
-            <span className="text-slate-900 font-bold text-sm mr-6 tracking-wide group-hover:text-[#757C54] transition-colors">Book Strategy Call</span>
+            <span className="text-slate-900 font-bold text-sm mr-6 tracking-wide group-hover:text-[#757C54] transition-colors">
+              Discuss Your Build
+            </span>
             <div className="w-12 h-12 bg-[#757C54] rounded-full flex items-center justify-center text-white group-hover:bg-slate-900 group-hover:text-white transition-colors shadow-inner">
               <ArrowUpRight size={20} strokeWidth={2.5} />
             </div>
@@ -42,4 +44,3 @@ export default function CtaBlock() {
     </section>
   );
 }
-
