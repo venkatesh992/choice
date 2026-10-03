@@ -79,7 +79,7 @@ export default function ServicesPage() {
   ];
 
   return (
-    <div className="px-4 py-16 md:py-24 md:px-8 max-w-[1400px] mx-auto min-h-screen">
+    <div className="px-4 pt-12 md:pt-16 pb-4 md:pb-6 md:px-8 max-w-[1400px] mx-auto min-h-screen">
       <FadeIn>
         <div className="mb-12 md:mb-16">
           <div className="flex gap-2 items-center mb-6">

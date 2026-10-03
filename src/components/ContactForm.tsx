@@ -45,7 +45,11 @@ export default function ContactForm() {
       const data = await res.json();
 
       if (!res.ok || !data.success) {
-        throw new Error(data.message || "Failed to submit inquiry. Please try again.");
+        let msg = data.message;
+        if (data.errors && Array.isArray(data.errors) && data.errors.length > 0) {
+          msg = data.errors.map((e: { message: string }) => e.message).join(", ");
+        }
+        throw new Error(msg || "Failed to submit inquiry. Please try again.");
       }
 
       setSubmitted(true);

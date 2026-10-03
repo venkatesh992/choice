@@ -223,7 +223,7 @@ const comparisonPoints = [
 
 export default function LaunchPage() {
   return (
-    <div className="px-4 py-6 md:py-12 max-w-[1400px] mx-auto min-h-screen">
+    <div className="px-4 pt-6 md:pt-12 pb-4 md:pb-6 max-w-[1400px] mx-auto min-h-screen">
       
       {/* Hero Section: 2-Column Design Inspired by Reference */}
       <FadeIn>

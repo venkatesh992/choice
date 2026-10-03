@@ -4,7 +4,7 @@ import FadeIn from "@/components/FadeIn";
 
 export default function CtaBlock() {
   return (
-    <section className="px-4 py-16 md:py-24 max-w-[1400px] mx-auto">
+    <section className="px-4 py-4 md:py-6 max-w-[1400px] mx-auto">
       <FadeIn effect="blur">
         <div className="w-full bg-[#757C54] rounded-[40px] p-12 md:p-24 text-center flex flex-col items-center shadow-2xl relative overflow-hidden">
           

@@ -66,7 +66,7 @@ export default function MarketingPage() {
   ];
 
   return (
-    <div className="min-h-screen pb-24">
+    <div className="min-h-screen pb-4">
       
       {/* Hero Section */}
       <section className="px-6 py-8 md:py-12 max-w-[1400px] mx-auto flex flex-col items-center justify-center text-center relative">

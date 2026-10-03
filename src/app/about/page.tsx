@@ -6,7 +6,7 @@ import CtaBlock from "@/components/CtaBlock";
 export default function AboutPage() {
   return (
     <>
-      <div className="px-4 py-16 md:py-24 md:px-8 max-w-[1400px] mx-auto min-h-screen">
+      <div className="px-4 pt-12 md:pt-16 pb-4 md:pb-6 md:px-8 max-w-[1400px] mx-auto min-h-screen">
         
         {/* Intro Section */}
         <div className="flex flex-col lg:flex-row gap-16 items-center mb-32">

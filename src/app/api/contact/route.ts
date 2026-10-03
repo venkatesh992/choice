@@ -22,22 +22,33 @@ export async function POST(req: Request) {
         ? (validatedData.phone.startsWith("+") ? `'${validatedData.phone}` : validatedData.phone) 
         : "N/A";
 
-      // Forward lead to Google Apps Script Webhook with follow redirects
-      const response = await fetch(sheetWebhookUrl, {
-        method: "POST",
-        redirect: "follow",
-        headers: {
-          "Content-Type": "application/json",
-        },
-        body: JSON.stringify({
-          timestamp: new Date().toLocaleString(),
-          ...validatedData,
-          phone: safePhone,
-        }),
-      });
+      try {
+        // Forward lead to Google Apps Script Webhook with 8s timeout and follow redirects
+        const controller = new AbortController();
+        const timeoutId = setTimeout(() => controller.abort(), 8000);
 
-      if (!response.ok) {
-        console.error("Google Sheets webhook response status:", response.status);
+        const response = await fetch(sheetWebhookUrl, {
+          method: "POST",
+          redirect: "follow",
+          signal: controller.signal,
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify({
+            timestamp: new Date().toLocaleString(),
+            ...validatedData,
+            phone: safePhone,
+          }),
+        });
+
+        clearTimeout(timeoutId);
+
+        if (!response.ok) {
+          console.error("Google Sheets webhook response status:", response.status);
+        }
+      } catch (webhookErr) {
+        // Log webhook error without crashing user submission
+        console.error("Google Sheets webhook forwarding error:", webhookErr);
       }
     } else {
       console.log("-----------------------------------------");

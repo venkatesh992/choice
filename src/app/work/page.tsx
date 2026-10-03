@@ -9,7 +9,7 @@ export const metadata = {
 
 export default function WorkPage() {
   return (
-    <div className="px-4 py-12 md:px-8 max-w-[1400px] mx-auto min-h-screen">
+    <div className="px-4 pt-12 pb-4 md:pb-6 md:px-8 max-w-[1400px] mx-auto min-h-screen">
       {/* Header */}
       <FadeIn>
         <div className="mb-12 md:mb-16">
@@ -31,7 +31,7 @@ export default function WorkPage() {
       <WorkShowcase />
 
       {/* Conversion Section */}
-      <div className="mt-20">
+      <div className="mt-8 md:mt-12">
         <CtaBlock />
       </div>
     </div>
