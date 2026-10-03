@@ -66,23 +66,6 @@ const projectsData: ProjectItem[] = [
     img: "/radoraimage.png"
   },
   {
-    id: "logistics-hub",
-    category: "saas",
-    categoryLabel: "SaaS & ERP",
-    title: "Multi-Tenant Dispatch & Consignment Hub",
-    subtitle: "Enterprise Logistics Management System",
-    challenge: "Multi-branch freight operators were managing driver dispatches, fuel calculations, and consignment payouts through manual spreadsheets, leading to billing discrepancies.",
-    solution: "Constructed a centralized web ERP with fine-grained role permissions, automated PDF manifest generation, milestone tracking, and real-time ledger audits.",
-    stack: ["Next.js", "PostgreSQL", "Prisma", "Tailwind CSS", "Redis"],
-    metrics: "64% reduction in paperwork • 20,000+ monthly shipments tracked",
-    features: [
-      "Branch-level data segregation",
-      "Automated tax and invoicing pipeline",
-      "Real-time dispatch status tracking"
-    ],
-    img: "https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=2070&auto=format&fit=crop"
-  },
-  {
     id: "radora-mobile-app",
     category: "mobile",
     categoryLabel: "Mobile App",
@@ -98,23 +81,6 @@ const projectsData: ProjectItem[] = [
       "Instant push alerts for fee receipts and announcements"
     ],
     img: "https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=2070&auto=format&fit=crop"
-  },
-  {
-    id: "field-service-app",
-    category: "mobile",
-    categoryLabel: "Mobile App",
-    title: "On-Demand Technician Dispatch App",
-    subtitle: "Cross-Platform Scheduling & In-App Invoicing",
-    challenge: "Field engineers lacked an interactive mobile interface for customer signatures, job checklist validation, and instant spare parts billing on customer premises.",
-    solution: "Built a dedicated technician mobile app with turn-by-turn navigation hooks, digital signature capture, offline job completion logs, and Razorpay payment links.",
-    stack: ["Flutter / Dart", "Firebase", "PostgreSQL", "Node.js"],
-    metrics: "35% faster job turnarounds • 15,000+ service visits logged",
-    features: [
-      "Geolocation tracking and routing",
-      "In-app customer signature capture & invoice generation",
-      "Digital payment QR code generation"
-    ],
-    img: "https://images.unsplash.com/photo-1512428559087-560fa5ceab42?q=80&w=2070&auto=format&fit=crop"
   },
   {
     id: "artisan-woocommerce",
@@ -134,23 +100,6 @@ const projectsData: ProjectItem[] = [
     img: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?q=80&w=2070&auto=format&fit=crop"
   },
   {
-    id: "specialty-apparel-store",
-    category: "ecommerce",
-    categoryLabel: "E-Commerce",
-    title: "Custom Apparel Storefront & B2B Wholesale Portal",
-    subtitle: "Dual Retail & Bulk Order Commerce Platform",
-    challenge: "Brand required a single platform handling both retail consumers with rich imagery and wholesale B2B buyers with tiered volume pricing and GST invoicing.",
-    solution: "Engineered a custom WooCommerce architecture supporting dynamic wholesale tier tables, bulk quantity matrix selectors, and automatic GST compliant invoice generation.",
-    stack: ["WooCommerce", "MySQL", "Custom REST Hooks", "Stripe & Net Banking"],
-    metrics: "₹1.4 Cr+ Annual GMV Processed • 99.8% Checkout Uptime",
-    features: [
-      "Dynamic B2B role pricing with instant tier discounts",
-      "Automated GST invoicing with downloadable PDF reports",
-      "Optimized WebP image delivery pipeline"
-    ],
-    img: "https://images.unsplash.com/photo-1472851294608-062f824d29cc?q=80&w=2070&auto=format&fit=crop"
-  },
-  {
     id: "architecture-studio-portfolio",
     category: "web",
     categoryLabel: "Web & Brand",
@@ -166,23 +115,6 @@ const projectsData: ProjectItem[] = [
       "Engineered for maximum organic search and local discoverability"
     ],
     img: "https://images.unsplash.com/photo-1600585154340-be6161a56a0c?q=80&w=2070&auto=format&fit=crop"
-  },
-  {
-    id: "consulting-firm-web",
-    category: "web",
-    categoryLabel: "Web & Brand",
-    title: "Corporate Advisory & Enterprise Consulting Portal",
-    subtitle: "High-Conversion Lead Generation & Thought Leadership",
-    challenge: "Consultancy firm struggled with low lead conversion from static brochures and had no automated way to qualify inbound client inquiries.",
-    solution: "Designed and built an authoritative corporate website with interactive assessment calculators, case study showcases, and seamless CRM webhook integration.",
-    stack: ["Next.js", "Tailwind 4", "Lucide React", "HubSpot API"],
-    metrics: "3x Inbound Qualified Leads • Sub-1s Global Edge Delivery",
-    features: [
-      "Interactive ROI calculator converting visitors to booked consultations",
-      "Automated lead ingestion into corporate CRM pipelines",
-      "Tactical responsive design across all devices"
-    ],
-    img: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?q=80&w=2070&auto=format&fit=crop"
   }
 ];
 

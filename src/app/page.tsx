@@ -6,7 +6,7 @@ import CtaBlock from "@/components/CtaBlock";
 
 export default function Home() {
   return (
-    <>
+    <div>
       {/* Hero Section */}
       <FadeIn direction="up" effect="blur">
         <section className="px-4 py-4 md:py-6 md:px-8 max-w-[1400px] mx-auto">
@@ -301,7 +301,7 @@ export default function Home() {
 
       <CtaBlock />
 
-    </>
+    </div>
   );
 }
 
